@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActivityStyleNoAnimation" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/app_background_color</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="AppThemeDown" parent="@style/AppBaseTheme">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabBarStyle">@style/MyTheme.ActionBar.TabBar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+        <item name="actionOverflowMenuStyle">@style/CustomOptionsMenu</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/customSpinnerStyle</item>
+        <!-- Pointer to Overflow style ***MUST*** go here or it will not work -->
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_go_back</item>
+        <item name="actionMenuTextAppearance">@style/MyMenuTextAppearance</item>
+    </style>
+
+    <style name="CustomOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/eb_col_12</item>
+    </style>
+
+
+    <style name="ActionBarTabStyle" parent="android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/edm_detail_actionbar_tabview_style</item>
+    </style>
+
+    <style name="MyMenuTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Styles -->
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/action_bar_more</item>
+    </style>
+
+    <!-- The beef: background color for Action Bar overflow menu -->
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@color/eb_col_14</item>
+    </style>
+
+    <style name="customSpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:divider">@color/segment_line</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="CaptureTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/action_bar</item>
+        <item name="android:indeterminateProgressStyle">@style/ActionBarProgressBar.MyStyle</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TabBar" parent="android:style/Widget.Holo.Light.ActionBar.TabBar">
+        <!-- This is an ORANGE background -->
+        <item name="android:background">@color/eb_col_7</item>
+    </style>
+
+
+    <style name="ActionBarProgressBar.MyStyle" parent="@android:style/Widget.Holo.ProgressBar.Small">
+        <item name="android:minWidth">28dp</item>
+        <item name="android:maxWidth">28dp</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:maxHeight">28dp</item>
+    </style>
+
+    <!--    <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+            <item name="android:layout_width">0.0dip</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1.0</item>
+        </style>-->
+
+    <!--    <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>-->
+
+    <style name="Theme.CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Theme.IAPTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/eb_col_7</item>
+    </style>
+
+    <style name="contact_profile_sub_content_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/eb_col_11</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginBottom">22.0dip</item>
+    </style>
+
+    <style name="contact_us_content">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/eb_col_8</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+
+    <style name="contact_us_content_blue">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/eb_col_14</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+
+    <style name="contact_us_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/eb_col_8</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+
+    <style name="event_agenda_spliter_style">
+        <item name="android:background">@color/segment_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+
+    <style name="event_dashboard_registration_spliter_style">
+        <item name="android:background">@color/eb_col_2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+
+    <style name="event_dashboard_spliter_style">
+        <item name="android:background">@color/eb_col_13</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+
+    <style name="event_springboard_action_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/eb_col_17</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="event_detail_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/eb_col_11</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="default_spliter_horizontal_style">
+        <item name="android:background">@color/segment_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="default_spliter_vertical_style">
+        <item name="android:background">@color/segment_line</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="default_spliter_horizontal_highlight_style">
+        <item name="android:background">@color/eb_col_15</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+</resources>

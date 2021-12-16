@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/top_con"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="月份"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingBottom="7dp"
+            android:paddingTop="3dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:id="@+id/mouth"
+            android:text="月份"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bot_con"
+        android:gravity="center_vertical"
+        android:layout_below="@id/top_con"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:text="金额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:paddingBottom="3dp"
+            android:paddingTop="7dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="PIN"
+            android:id="@+id/et_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
