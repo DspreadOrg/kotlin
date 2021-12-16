@@ -1,0 +1,649 @@
+
+<app>
+    <9F06>00000000000000000000000000000000</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0566</5F2A> <!--Transaction Currency Code-->
+    <5F36>02</5F36> <!--Transaction Currency Exponent-->
+    <9F01>000000000000</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>0000</9F15> <!--Merchant Category Code-->
+    <9F16>000000000000000000000000000000</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0566</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>0000000000000000</9F1C> <!--Terminal Identification-->
+    <9F1E>0000000000000000</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>00</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0566</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>02</9F3D> <!--Application Reference Currency-->
+    <9F40>7000B0A001</9F40> <!--Additional Terminal Capabilities-->
+    <9F4E></9F4E> <!--Merchant Name and Location，add 0x00 if the digits is not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>0000000000</DF11> <!--TAC Default-->
+    <DF12>0000008000</DF12> <!--TAC Online-->
+    <DF13>0000000000</DF13> <!--TAC Denial-->
+    <DF14>8A</DF14> <!--Default DDOL-->
+    <DF15>00000000</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>63</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--Target Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76></DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--Contactless CVM Required limit-->
+    <DF79>E0F8C8</DF79> <!--Contactless Terminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--Contactless Additional Terminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000000031010</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--Additional Terminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>DC4000A800</DF11> <!--TAC Default-->
+    <DF12>DC4004F800</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000064</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>32</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>14</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->    
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000000032010</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>DC4000A800</DF11> <!--TAC Default-->
+    <DF12>DC4004F800</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000005</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>32</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>14</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000000041010</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0000</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>F850ACA000</DF11> <!--TAC Default-->
+    <DF12>F850ACF800</DF12> <!--TAC Online-->
+    <DF13>0000000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000001F4</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>00</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F02069F370495059A039C015F2A02</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000000046000</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>F850ACA000</DF11> <!--TAC Default-->
+    <DF12>F850ACF800</DF12> <!--TAC Online-->
+    <DF13>0000000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000001F4</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>32</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>14</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F02069F370495059A039C015F2A02</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000004540010</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0100</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>D84000A800</DF11> <!--TAC Default-->
+    <DF12>D84004F800</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000001F4</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>00</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F02065F2A029A039C0195059F3704</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000000043060</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>F850ACA000</DF11> <!--TAC Default-->
+    <DF12>F850ACF800</DF12> <!--TAC Online-->
+    <DF13>0000000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000001F4</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>00</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F02069F370495059A039C015F2A02</DF76> <!--Default Tdol-->    
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A00000002501</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>C800008000</DF11> <!--TAC Default-->
+    <DF12>C800008000</DF12> <!--TAC Online-->
+    <DF13>0000000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000032</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>19</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>0A</DF17> <!--Target Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A000000333010101</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>FCF0E48800</DF11> <!--TAC Default-->
+    <DF12>FCF8E4F880</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000063</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>63</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A000000333010102</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>FCF0E48800</DF11> <!--TAC Default-->
+    <DF12>FCF8E4F880</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000063</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>63</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A000000333010103</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>FCF0E48800</DF11> <!--TAC Default-->
+    <DF12>FCF8E4F880</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000063</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>63</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A000000333010106</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0096</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>22</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>FCF0E48800</DF11> <!--TAC Default-->
+    <DF12>FCF8E4F880</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000000000063</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>63</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>00</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F1A0295059A039C01</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<app>
+    <9F06>A0000003710001</9F06> <!--Application Identifier(AID)–terminal-->
+    <5F2A>0484</5F2A> <!--Transaction Currency Code-->
+    <5F36>00</5F36> <!--Transaction Currency Exponent-->
+    <9F01>001234567890</9F01> <!--Acquirer Identifier-->
+    <9F09>0100</9F09> <!--Application Version Number-->
+    <9F15>1234</9F15> <!--Merchant Category Code-->
+    <9F16>4243544553543132333435363738</9F16> <!--Merchant Identifier，add 0x00 if the digits is not enough-->
+    <9F1A>0484</9F1A> <!--Terminal Country Code-->
+    <9F1B>00000000</9F1B> <!--Terminal Floor Limit-->
+    <9F1C>4E4C2D4750373330</9F1C> <!--Terminal Identification-->
+    <9F1E>3833323031494343</9F1E> <!--Interface Device (IFD) Serial Number-->
+    <9F33>E0F8C8</9F33> <!--Terminal Capabilities-->
+    <9F35>21</9F35> <!--Terminal Type-->
+    <9F39>05</9F39> <!--Point-of-Service (POS) Entry Mode-->
+    <9F3C>0484</9F3C> <!--Transaction Reference Currency Code-->
+    <9F3D>00</9F3D> <!--Transaction Reference?Currency Exponent-->
+    <9F40>F000F0A001</9F40> <!--AdditionalTerminal Capabilities-->
+    <9F4E>61626364</9F4E> <!--Merchant Name and Location，add 0x00 if not enough-->
+    <9F66>32C04000</9F66> <!--Terminal Default Transaction Qualifiers-->
+    <9F73>000000</9F73> <!--Currency Conversion Factor-->
+    <9F7B>000000001388</9F7B> <!--Electronic Cash Terminal Transaction Limit-->
+    <DF01>01</DF01> <!--Application Selection Indicator-->
+    <DF11>FCF0E48800</DF11> <!--TAC Default-->
+    <DF12>FCF8E4F880</DF12> <!--TAC Online-->
+    <DF13>0010000000</DF13> <!--TAC Denial-->
+    <DF14>9F3704</DF14> <!--Default DDOL-->
+    <DF15>000001F4</DF15> <!--Threshold Value BiasedRandom Selection-->
+    <DF16>00</DF16> <!--Maximum Target Percentage to be used for Biased Random Selection-->
+    <DF17>32</DF17> <!--arget Percentage to be Used for Random Selection-->
+    <DF19>000000001388</DF19> <!--Terminal Contactless Offline Floor Limit-->
+    <DF20>999999999999</DF20> <!--Terminal Contactless Transaction Limit-->
+    <DF21>000000000000</DF21> <!--Terminal Execute Cvm Limit-->
+    <DF72>F4F0F0FAAFFE8000</DF72> <!--ICS-->
+    <DF73>01</DF73> <!--Status-->
+    <DF74>0F</DF74> <!--Identity Of Each Limit Exist-->
+    <DF75>01</DF75> <!--Terminal Status Check，Default value = 0-->
+    <DF76>9F02065F2A029A039C0195059F3704</DF76> <!--Default Tdol-->
+    <DF78>000000000000</DF78> <!--ContactlessTerminal Execute Cvm Limit-->
+    <DF79>E0F8C8</DF79> <!--ContactlessTerminal Capabilities-->
+    <DF7A>F000F0A001</DF7A> <!--ContactlessAdditionalTerminal Capabilities-->
+</app>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>07</9F22> <!--Public Key Index-->
+    <DF02>A89F25A56FA6DA258C8CA8B40427D927B4A1EB4D7EA326BBB12F97DED70AE5E4480FC9C5E8A972177110A1CC318D06D2F8F5C4844AC5FA79A4DC470BB11ED635699C17081B90F1B984F12E92C1C529276D8AF8EC7F28492097D8CD5BECEA16FE4088F6CFAB4A1B42328A1B996F9278B0B7E3311CA5EF856C2F888474B83612A82E4E00D0CD4069A6783140433D50725F</DF02> <!--Public Key Moudle-->
+    <DF03>B4BC56CC4E88324932CBC643D6898F6FE593B172</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311217</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>08</9F22> <!--Public Key Index-->
+    <DF02>D9FD6ED75D51D0E30664BD157023EAA1FFA871E4DA65672B863D255E81E137A51DE4F72BCC9E44ACE12127F87E263D3AF9DD9CF35CA4A7B01E907000BA85D24954C2FCA3074825DDD4C0C8F186CB020F683E02F2DEAD3969133F06F7845166ACEB57CA0FC2603445469811D293BFEFBAFAB57631B3DD91E796BF850A25012F1AE38F05AA5C4D6D03B1DC2E568612785938BBC9B3CD3A910C1DA55A5A9218ACE0F7A21287752682F15832A678D6E1ED0B</DF02> <!--Public Key Moudle-->
+    <DF03>20D213126955DE205ADC2FD2822BD22DE21CF9A8</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311223</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>09</9F22> <!--Public Key Index-->
+    <DF02>9D912248DE0A4E39C1A7DDE3F6D2588992C1A4095AFBD1824D1BA74847F2BC4926D2EFD904B4B54954CD189A54C5D1179654F8F9B0D2AB5F0357EB642FEDA95D3912C6576945FAB897E7062CAA44A4AA06B8FE6E3DBA18AF6AE3738E30429EE9BE03427C9D64F695FA8CAB4BFE376853EA34AD1D76BFCAD15908C077FFE6DC5521ECEF5D278A96E26F57359FFAEDA19434B937F1AD999DC5C41EB11935B44C18100E857F431A4A5A6BB65114F174C2D7B59FDF237D6BB1DD0916E644D709DED56481477C75D95CDD68254615F7740EC07F330AC5D67BCD75BF23D28A140826C026DBDE971A37CD3EF9B8DF644AC385010501EFC6509D7A41</DF02> <!--Public Key Moudle-->
+    <DF03>1FF80A40173F52D7D27E0F26A146A1C8CCB29046</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311222</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>92</9F22> <!--Public Key Index-->
+    <DF02>996AF56F569187D09293C14810450ED8EE3357397B18A2458EFAA92DA3B6DF6514EC060195318FD43BE9B8F0CC669E3F844057CBDDF8BDA191BB64473BC8DC9A730DB8F6B4EDE3924186FFD9B8C7735789C23A36BA0B8AF65372EB57EA5D89E7D14E9C7B6B557460F10885DA16AC923F15AF3758F0F03EBD3C5C2C949CBA306DB44E6A2C076C5F67E281D7EF56785DC4D75945E491F01918800A9E2DC66F60080566CE0DAF8D17EAD46AD8E30A247C9F</DF02> <!--Public Key Moudle-->
+	<DF03>429C954A3859CEF91295F663C963E582ED6EB253</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311222</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>94</9F22> <!--Public Key Index-->
+    <DF02>ACD2B12302EE644F3F835ABD1FC7A6F62CCE48FFEC622AA8EF062BEF6FB8BA8BC68BBF6AB5870EED579BC3973E121303D34841A796D6DCBC41DBF9E52C4609795C0CCF7EE86FA1D5CB041071ED2C51D2202F63F1156C58A92D38BC60BDF424E1776E2BC9648078A03B36FB554375FC53D57C73F5160EA59F3AFC5398EC7B67758D65C9BFF7828B6B82D4BE124A416AB7301914311EA462C19F771F31B3B57336000DFF732D3B83DE07052D730354D297BEC72871DCCF0E193F171ABA27EE464C6A97690943D59BDABB2A27EB71CEEBDAFA1176046478FD62FEC452D5CA393296530AA3F41927ADFE434A2DF2AE3054F8840657A26E0FC617</DF02> <!--Public Key Moudle-->
+	<DF03>C4A3C43CCF87327D136B804160E47D43B60E6E0F</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311222</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>95</9F22> <!--Public Key Index-->
+    <DF02>BE9E1FA5E9A803852999C4AB432DB28600DCD9DAB76DFAAA47355A0FE37B1508AC6BF38860D3C6C2E5B12A3CAAF2A7005A7241EBAA7771112C74CF9A0634652FBCA0E5980C54A64761EA101A114E0F0B5572ADD57D010B7C9C887E104CA4EE1272DA66D997B9A90B5A6D624AB6C57E73C8F919000EB5F684898EF8C3DBEFB330C62660BED88EA78E909AFF05F6DA627B</DF02> <!--Public Key Moudle-->
+	<DF03>EE1511CEC71020A9B90443B37B1D5F6E703030F6</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311222</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000003</9F06> <!--RID-->
+    <9F22>99</9F22> <!--Public Key Index-->
+    <DF02>AB79FCC9520896967E776E64444E5DCDD6E13611874F3985722520425295EEA4BD0C2781DE7F31CD3D041F565F747306EED62954B17EDABA3A6C5B85A1DE1BEB9A34141AF38FCF8279C9DEA0D5A6710D08DB4124F041945587E20359BAB47B7575AD94262D4B25F264AF33DEDCF28E09615E937DE32EDC03C54445FE7E382777</DF02> <!--Public Key Moudle-->
+	<DF03>4ABFFD6B1C51212D05552E431C5B17007D2F5E6D</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311222</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+<capk>
+    <9F06>A000000004</9F06> <!--RID-->
+    <9F22>04</9F22> <!--Public Key Index-->
+    <DF02>A6DA428387A502D7DDFB7A74D3F412BE762627197B25435B7A81716A700157DDD06F7CC99D6CA28C2470527E2C03616B9C59217357C2674F583B3BA5C7DCF2838692D023E3562420B4615C439CA97C44DC9A249CFCE7B3BFB22F68228C3AF13329AA4A613CF8DD853502373D62E49AB256D2BC17120E54AEDCED6D96A4287ACC5C04677D4A5A320DB8BEE2F775E5FEC5</DF02> <!--Public Key Moudle-->
+    <DF03>381A035DA58B482EE2AF75F4C3F2CA469BA4AA6C</DF03> <!--Public Key Check Value-->
+    <DF04>000003</DF04> <!--Public Key Exponent-->
+    <DF05>20311217</DF05> <!--Public Key Expired Date-->
+    <DF06>01</DF06> <!--Public Key Hash Algorithm-->
+    <DF07>01</DF07> <!--Public Key Algorithm-->
+</capk>
+
+

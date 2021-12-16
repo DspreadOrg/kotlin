@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background_color">#FFF5F4F3</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <!-- added by Luna -->
+    <!-- Green -->
+    <color name="eb_col_35">#b2eac1</color>
+    <color name="eb_col_32">#66d483</color>
+    <color name="eb_col_2">#00B832</color>
+    <color name="eb_col_50">#4dcd70</color>
+    <color name="progress_start">#E5F9EB</color>
+    <color name="membership_text">#FF323232</color>
+    <color name="membership_small_text">#FF555555</color>
+    <color name="membership_green">#FF00B832</color>
+    <color name="membership_grey">#FF999999</color>
+
+    <!--自定义键盘颜色-->
+    <color name="keyboard_back_color">#E5E5E5</color>
+    <color name="keyboard_pressed_color">#D4D6D8</color>
+    <color name="keyboard_text_color">#333333</color>
+    <color name="keyboard_blue_color">#03A9F4</color>
+    <color name="keyboard_white_color">#FFFFFF</color>
+    <color name="blue_03A9F4">#03A9F4</color>
+    <color name="navigationBarColor">#f46444</color>
+
+    <!-- Blue -->
+    <color name="eb_col_14">#00A1DE</color>
+    <color name="eb_col_9">#4b81b1</color>
+    <color name="eb_col_4">#004C90</color>
+    <color name="eb_col_5">#004481</color>
+    <color name="eb_col_10">#002959</color>
+    <color name="eb_col_42">#3370a6</color>
+
+    <!-- Gray -->
+    <color name="eb_col_7">#ffffff</color>
+    <color name="eb_col_16">#fafafa</color>
+    <color name="eb_col_41">#f7fdf9</color>
+    <color name="eb_col_13">#f2f6f9</color>
+    <color name="eb_col_1">#edf0f1</color>
+    <color name="eb_col_12">#f8f8f8</color>
+    <color name="eb_col_6">#d6d6d6</color>
+    <color name="eb_col_31">#f0f0f0</color>
+    <color name="eb_col_15">#999999</color>
+    <color name="eb_col_17">#6b7883</color>
+    <color name="eb_col_11">#555555</color>
+    <color name="eb_col_8">#333333</color>
+    <color name="eb_col_34">#000000</color>
+    <color name="eb_attendee_info">#00428A</color>
+    <color name="eb_attendee_title">#004C90</color>
+    <color name="circle_not_check_in">#80DB98</color>
+    <color name="eb_number_txt">#FF333333</color>
+
+    <!-- Other -->
+    <color name="eb_col_44">#842C91</color>
+    <color name="eb_col_43">#F5C242</color>
+    <color name="eb_col_36">#FF7000</color>
+    <color name="eb_col_38">#F6313F</color>
+
+    <color name="eb_col_60">#3882A1</color>
+    <color name="eb_col_61">#476EA4</color>
+    <color name="eb_col_62">#EC1A29</color>
+    <color name="eb_col_63">#E48A95</color>
+    <color name="eb_col_64">#142540</color>
+    <color name="eb_col_65">#1E1E1E</color>
+    <color name="eb_col_66">#484848</color>
+    <color name="eb_col_67">#848485</color>
+    <color name="eb_col_68">#383838</color>
+    <color name="eb_col_69">#9A9A9A</color>
+    <color name="eb_col_70">#444444</color>
+    <color name="eb_col_71">#979797</color>
+    <color name="eb_col_72">#EF7003</color>
+
+    <color name="eb_col_not_opened">#64b42f</color>
+    <color name="eb_col_processing">#ffaf47</color>
+    <color name="eb_col_bounced">#6a6a6a</color>
+    <color name="eb_col_ignored">#EF727B</color>
+
+    <color name="eb_col_line">#E5E9EE</color>
+    <color name="eb_col_73">#7F94AC</color>
+    <color name="eb_pop_view">#007AFF</color>
+
+    <color name="eb_col_filter_text">#7F94AC</color>
+    <color name="eb_col_filter">#F9F9F9</color>
+    <color name="eb_col_profile_position">#7F93AB</color>
+
+
+    <!--     new branding added -->
+    <color name="action_bar">@color/eb_col_4</color>
+
+    <!-- drawer menu -->
+    <color name="segment_line">@color/eb_col_12</color>
+
+    <!-- email campaign color -->
+
+    <!--嫩粉-->
+    <!--炭黑-->
+    <!--牙灰-->
+    <!--深绿-->
+
+    <color name="past_event_walk_in">#add136</color>
+
+    <color name="btn_sign_in_pressed">#0089bd</color>
+
+    <!--transparent color-->
+    <color name="eb_col_30">#fafafa</color>
+    <color name="transparency">#00FFFFFF</color>
+    <!--custom color-->
+    <color name="custom_light_color">#ffffff</color>
+    <color name="custom_middle_color">#d3d4d4</color>
+    <color name="custom_dark_color">#000000</color>
+
+    <!--campaign pie chart color-->
+    <color name="campaign_pie_chart_sending">#76DDFB</color>
+    <color name="campaign_pie_chart_sent">#2B82BE</color>
+    <color name="campaign_pie_chart_not_sent">#C5E5FB</color>
+
+    <!--check in point-->
+    <color name="check_in_point">#00C43D</color>
+
+    <!--transparent colors-->
+    <color name="eb_col_2_trans_30">#4d00b732</color>
+    <color name="eb_col_2_trans_60">#9900b732</color>
+    <color name="eb_col_2_trans_40">#6600b732</color>
+    <color name="eb_col_4_trans_20">#33004c90</color>
+    <color name="eb_col_4_trans_40">#66004C90</color>
+    <color name="eb_col_4_trans_50">#80004C90</color>
+    <color name="eb_col_34_trans_10">#1a000000</color>
+    <color name="eb_col_34_trans_15">#26000000</color>
+    <color name="eb_col_34_trans_20">#33000000</color>
+    <color name="eb_col_34_trans_35">#59000000</color>
+    <color name="eb_col_6_trans_15">#26d6d6d6</color>
+    <color name="eb_col_7_trans_10">#1affffff</color>
+    <color name="eb_col_7_trans_15">#26ffffff</color>
+    <color name="eb_col_7_trans_50">#80ffffff</color>
+    <color name="eb_col_7_trans_60">#99ffffff</color>
+    <color name="black_trans_50">#80000000</color>
+    <color name="eb_col_14_trans_10">#1a00a1de</color>
+    <color name="eb_col_36_trans_10">#1aff7000</color>
+    <color name="eb_col_38_trans_10">#1aF6313F</color>
+    <color name="eb_col_17_trans_10">#1a6b7883</color>
+    <color name="eb_col_2_trans_10">#1a00b832</color>
+    <color name="eb_col_2_trans_20">#3300b832</color>
+    <color name="eb_col_44_trans_10">#1ab866c8</color>
+    <color name="eb_col_42_trans_10">#1a3370a6</color>
+    <color name="eb_col_38_trans_5">#0DF6313F</color>
+    <color name="eb_col_43_trans_10">#1aF5C242</color>
+    <color name="eb_col_61_trans">#1a476EA4</color>
+    <color name="eb_col_63_trans">#1aE48A95</color>
+    <color name="eb_col_73_trans">#1a7F94AC</color>
+
+
+    <color name="mulchoice">#ECECEC</color>
+    <color name="mulchoice_question">#004C90</color>
+    <color name="mulchoice_explain">#999999</color>
+    <color name="upload_progressbar">#00A1DE</color>
+    <color name="coupon_status">#16AE26</color>
+    <color name="coupon_discount">#3A669B</color>
+
+    <color name="nearly_hard">#97000000</color>
+    <color name="font_focus">#D7F679</color>
+    <color name="gold_player">#F7F466</color>
+    <color name="whitetran">#87FFFFFF</color>
+    <color name="divider_line">#FF575757</color>
+
+    <color name="listview_item_normal">#eef0ed</color>
+    <color name="listview_item_pressed">#d4d4d4</color>
+
+    <color name="message_checked">#90918f</color>
+    <color name="message_no_check">#323232</color>
+
+    <color name="stick_color_bg">#e2e2e2</color>
+
+    <color name="server_color">#E6333333</color>
+    <color name="server_title">#F5F5F6</color>
+</resources>

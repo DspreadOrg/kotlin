@@ -1,0 +1,189 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 一级菜单 -->
+    <item android:title="@string/device_info">
+
+        <!-- 二级菜单 -->
+        <menu>
+            <item
+                android:id="@+id/menu_get_pos_id"
+                android:orderInCategory="100"
+                android:title="@string/get_pos_id" />
+            <item
+                android:id="@+id/menu_get_deivce_info"
+                android:orderInCategory="100"
+                android:title="@string/get_info" />
+
+            <item
+                android:id="@+id/get_update_key"
+                android:orderInCategory="100"
+                android:title="@string/get_update_key" />
+            <item
+                android:id="@+id/get_device_public_key"
+                android:orderInCategory="100"
+                android:title="@string/get_device_public_key" />
+
+            <item
+                android:id="@+id/menu_get_deivce_key_checkvalue"
+                android:orderInCategory="100"
+                android:title="@string/get_key_checkvalue" />
+
+
+            <item
+                android:id="@+id/get_ksn"
+                android:orderInCategory="100"
+                android:title="@string/get_ksn" />
+            <item
+                android:id="@+id/getEncryptData"
+                android:orderInCategory="100"
+                android:title="@string/get_encrypt_data" />
+
+        </menu>
+    </item>
+
+
+    <!-- 一级菜单 -->
+    <item android:title="@string/device_update">
+
+        <!-- 二级菜单 -->
+        <menu>
+
+ <!--           <item
+                android:id="@+id/injectKeys"
+                android:orderInCategory="100"
+                android:title="@string/updateInjectKeys" />-->
+            <item
+                android:id="@+id/updateIPEK"
+                android:orderInCategory="100"
+                android:title="@string/updateIPEK" />
+            <item
+                android:id="@+id/getSleepTime"
+                android:orderInCategory="100"
+                android:title="getSleepTime" />
+            <item
+                android:id="@+id/updateEMVAPP"
+                android:orderInCategory="100"
+                android:title="update EMV APP" />
+            <item
+                android:id="@+id/updateEMVCAPK"
+                android:orderInCategory="100"
+                android:title="@string/updateEMVRID" />
+            <item
+                android:id="@+id/setMasterkey"
+                android:orderInCategory="100"
+                android:title="setMasterkey" />
+
+            <item
+                android:id="@+id/three"
+                android:orderInCategory="100"
+                android:title="clear" />
+<!--            <item
+                android:id="@+id/resetMasterKey"
+                android:orderInCategory="100"
+                android:title="resetMasterKey" />-->
+            <item
+                android:id="@+id/resetSessionKey"
+                android:orderInCategory="100"
+                android:title="resetSessionKey" />
+
+<!--            <item
+                android:id="@+id/resetIpek"
+                android:orderInCategory="100"
+                android:title="resetIpek" />-->
+
+
+        </menu>
+    </item>
+
+
+    <!-- 一级菜单 -->
+    <item android:title="@string/device_operate">
+
+        <!-- 二级菜单 -->
+        <menu>
+            <item
+                android:id="@+id/reset_qpos"
+                android:orderInCategory="100"
+                android:title="@string/reset_qpos" />
+
+            <item
+                android:id="@+id/addKsn"
+                android:orderInCategory="100"
+                android:title="@string/add_ksn" />
+            <item
+                android:id="@+id/doTradeLogOperation"
+                android:orderInCategory="100"
+                android:title="@string/do_tradelog_operation" />
+            <item
+                android:id="@+id/menu_operate_mafire"
+                android:orderInCategory="100"
+                android:title="@string/operate_mafire" />
+
+            <item
+                android:id="@+id/menu_operate_update"
+                android:orderInCategory="100"
+                android:title="@string/operate_update" />
+            <item
+                android:id="@+id/menu_get_pin"
+                android:orderInCategory="100"
+                android:title="@string/get_pin" />
+            <item
+                android:id="@+id/set_sleepmode_time"
+                android:orderInCategory="100"
+                android:title="@string/set_sleepMode_time" />
+            <item
+                android:id="@+id/set_shutdowm_time"
+                android:orderInCategory="100"
+                android:title="set the shutdowm time" />
+
+            <item
+                android:id="@+id/audio_test"
+                android:orderInCategory="100"
+                android:title="@string/audio_open" />
+
+            <item
+                android:id="@+id/isCardExist"
+                android:orderInCategory="100"
+                android:title="@string/isCardExist" />
+
+            <item
+                android:id="@+id/setBuzzer"
+                android:orderInCategory="100"
+                android:title="@string/setBuzzer" />
+
+            <item
+                android:id="@+id/cusDisplay"
+                android:orderInCategory="100"
+                android:title="Display custom information" />
+
+            <item
+                android:id="@+id/closeDisplay"
+                android:orderInCategory="100"
+                android:title="Close Display custom information" />
+
+            <item
+                android:id="@+id/getQuickEmvStatus"
+                android:orderInCategory="100"
+                android:title="@string/getQuickEmvStatus" />
+            <item
+                android:id="@+id/setQuickEmvStatus"
+                android:orderInCategory="100"
+                android:title="@string/setQuickEmvStatus" />
+
+        </menu>
+    </item>
+
+    <!-- 一级菜单 -->
+    <item android:title="@string/device_other">
+
+        <!-- 二级菜单 -->
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:orderInCategory="100"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>

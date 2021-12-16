@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CommunicationTestActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:padding="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button android:id="@+id/btn_led"
+                style="@style/BtnTestCommand"
+                android:text="@string/test_led_start"/>
+            <Button android:id="@+id/btn_blu_led"
+                style="@style/BtnTestCommand" android:visibility="gone"
+                android:text="@string/test_led_blu"/>
+            <Button android:id="@+id/btn_yel_led"
+                style="@style/BtnTestCommand" android:visibility="gone"
+                android:text="@string/test_led_yel"/>
+            <Button android:id="@+id/btn_buzzer"
+                style="@style/BtnTestCommand"
+                android:text="@string/test_buzzer_start"/>
+            <Button android:id="@+id/btn_mcr"
+                style="@style/BtnTestCommand"
+                android:text="@string/mcr_test"/>
+            <Button android:id="@+id/btn_psam"
+                style="@style/BtnTestCommand"
+                android:text="@string/psam_test"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button android:id="@+id/btn_red_led"
+                style="@style/BtnTestCommand" android:visibility="gone"
+                android:text="@string/test_led_red"/>
+            <Button android:id="@+id/btn_led_gre"
+                style="@style/BtnTestCommand" android:visibility="gone"
+                android:text="@string/test_led_green"/>
+            <Button android:id="@+id/btn_icc"
+                style="@style/BtnTestCommand"
+                android:text="@string/icc_test"/>
+            <Button android:id="@+id/btn_nfc"
+                style="@style/BtnTestCommand"
+                android:text="@string/nfc_test"/>
+            <Button android:id="@+id/btn_get_version"
+                style="@style/BtnTestCommand"
+                android:text="@string/get_version"/>
+            <Button android:id="@+id/btn_hardware_check"
+                style="@style/BtnTestCommand"
+                android:text="@string/hardware_check" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@+id/btn_reset_pos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_qpos"/>
+    <TextView android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/result"
+        android:id="@+id/txt_result"
+        android:layout_margin="10dp"/>
+</LinearLayout>
