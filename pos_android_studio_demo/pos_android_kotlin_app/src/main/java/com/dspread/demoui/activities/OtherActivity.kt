@@ -29,6 +29,7 @@ import com.dspread.demoui.utils.TRACE
 import com.dspread.xpos.CQPOSService
 import com.dspread.xpos.QPOSService
 import com.dspread.xpos.QPOSService.*
+import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -356,6 +357,9 @@ class OtherActivity : BaseActivity() {
                     "09118012400705E00000", "C22766F7379DD38AA5E1DA8C6AFA75AC", "B2DE27F60A443944")
         } else if (item.itemId == R.id.getSleepTime) {
             pos!!.getShutDownTime()
+        } else if (item.getItemId() == R.id.updateEMVByXml){
+            statusEditText!!.setText("updating emv config, please wait...")
+            updateEmvConfigByXml()
         } else if (item.itemId == R.id.getQuickEmvStatus) {
             pos!!.getQuickEMVStatus(QPOSService.EMVDataOperation.getEmv, "9F061000000000000000000000000000000000")
         } else if (item.itemId == R.id.setQuickEmvStatus) {
@@ -2075,6 +2079,13 @@ class OtherActivity : BaseActivity() {
                 }
             }
         }
+    }
+
+    fun updateEmvConfigByXml(){
+        pos?.updateEMVConfigByXml(this@OtherActivity.assets.open("emv_profile_tlv_D20.xml").bufferedReader().use {
+            val text = it.readText()
+            text
+        })
     }
 
     companion object {

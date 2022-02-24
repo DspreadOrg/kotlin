@@ -70,6 +70,10 @@
                 android:orderInCategory="100"
                 android:title="@string/updateEMVRID" />
             <item
+                android:id="@+id/updateEMVByXml"
+                android:orderInCategory="100"
+                android:title="@string/updateEMVByXml" />
+            <item
                 android:id="@+id/setMasterkey"
                 android:orderInCategory="100"
                 android:title="setMasterkey" />

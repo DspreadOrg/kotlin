@@ -506,6 +506,9 @@ class MainActivity : BaseActivity(), ShowGuideView.onGuideViewListener {
             var capkTLV = "9F0605A0000003339F22010BDF0281f8CF9FDF46B356378E9AF311B0F981B21A1F22F250FB11F55C958709E3C7241918293483289EAE688A094C02C344E2999F315A72841F489E24B1BA0056CFAB3B479D0E826452375DCDBB67E97EC2AA66F4601D774FEAEF775ACCC621BFEB65FB0053FC5F392AA5E1D4C41A4DE9FFDFDF1327C4BB874F1F63A599EE3902FE95E729FD78D4234DC7E6CF1ABABAA3F6DB29B7F05D1D901D2E76A606A8CBFFFFECBD918FA2D278BDB43B0434F5D45134BE1C2781D157D501FF43E5F1C470967CD57CE53B64D82974C8275937C5D8502A1252A8A5D6088A259B694F98648D9AF2CB0EFD9D943C69F896D49FA39702162ACB5AF29B90BADE005BC157DF0314BD331F9996A490B33C13441066A09AD3FEB5F66CDF0403000003DF050420311222DF060101DF070101"
             pos!!.updateEmvCAPKByTlv(EMVDataOperation.Add, capkTLV)
 
+        } else if (item.getItemId() == R.id.updateEMVByXml){
+            statusEditText.setText("updating emv config, please wait...")
+            updateEmvConfigByXml()
         } else if (item.getItemId() == R.id.setBuzzer) {
             pos!!.doSetBuzzerOperation(3)//set buzzer
         } else if (item.getItemId() == R.id.menu_get_deivce_info) {
@@ -2299,6 +2302,13 @@ class MainActivity : BaseActivity(), ShowGuideView.onGuideViewListener {
         TRACE.d("emvAppCfg: $emvAppCfg")
         TRACE.d("emvCapkCfg: $emvCapkCfg")
         pos?.updateEmvConfig(emvAppCfg, emvCapkCfg)
+    }
+
+    fun updateEmvConfigByXml(){
+        pos?.updateEMVConfigByXml(this@MainActivity.assets.open("emv_profile_tlv.xml").bufferedReader().use {
+            val text = it.readText()
+            text
+        })
     }
 
     /**
