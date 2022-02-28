@@ -4,9 +4,36 @@
 # Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
+
+before_script:
+- cd pos_android_studio_demo/
+- export GRADLE_USER_HOME=$(pwd)/.gradle
+- chmod +x ./gradlew
+- export ANDROID_SDK_ROOT="/sdk"
 stages:
 - test
+- build
+- release
+
+include: 
+  - template: Secret-Detection.gitlab-ci.yml
+  - template: Security/SAST.gitlab-ci.yml
+
 sast:
   stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml
+  script: -echo "runnging the test job"
+
+assembleRelease:
+  stage: build
+  image: jangrewe/gitlab-ci-android
+  script:
+  - echo $KEYSTORE_FILE | base64 -d > my.keystore
+  - ./gradlew assembleRelease --stacktrace
+    -Pandroid.injected.signing.store.file=$(pwd)/my.keystore
+    -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD
+    -Pandroid.injected.signing.key.alias=$KEY_ALIAS
+    -Pandroid.injected.signing.key.password=$KEY_PASSWORD
+  artifacts:
+    paths:
+    - pos_android_studio_demo/pos_android_studio_app/build/outputs/apk/release/pos_android_studio_app-release.apk
+
