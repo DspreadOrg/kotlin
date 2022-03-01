@@ -17,7 +17,7 @@ stages:
 
 include: 
   - template: Secret-Detection.gitlab-ci.yml
-  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+  - template: Dependency-Scanning.gitlab-ci.yml
 
 assembleRelease:
   stage: build
@@ -36,6 +36,5 @@ assembleRelease:
 sast:
   stage: test
   script: -echo "runnging the test job"
-  artifacts:
-    reports:
-       dependency_scanning: gl-dependency-scanning-report.json
+  variables:
+     CI_DEBUG_TRACE: "true"
