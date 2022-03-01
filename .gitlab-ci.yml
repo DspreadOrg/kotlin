@@ -17,7 +17,7 @@ stages:
 
 include: 
   - template: Secret-Detection.gitlab-ci.yml
-  - template: Dependency-Scanning.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
 
 assembleRelease:
   stage: build
