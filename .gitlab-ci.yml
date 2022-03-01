@@ -9,6 +9,7 @@ before_script:
 - cd pos_android_studio_demo/
 - export GRADLE_USER_HOME=$(pwd)/.gradle
 - chmod +x ./gradlew
+- export ANDROID_SDK_ROOT="/sdk"
 stages:
 - build
 - test
@@ -30,11 +31,13 @@ assembleRelease:
     -Pandroid.injected.signing.key.password=$KEY_PASSWORD
   artifacts:
     paths:
-    - pos_android_studio_demo/pos_android_studio_app/build/outputs/apk/release/pos_android_studio_app-release.apk
+    - pos_android_studio_demo/pos_android_kotlin_app/build/outputs/apk/release/pos_android_kotlin_app-release.apk
 
 sast:
   stage: test
   script: -echo "runnging the test job"
   artifacts:
+    paths:
+     - gl-sast-report.json
     reports:
       sast: gl-sast-report.json
