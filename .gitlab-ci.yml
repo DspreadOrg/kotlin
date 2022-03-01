@@ -17,7 +17,7 @@ stages:
 
 include: 
   - template: Secret-Detection.gitlab-ci.yml
-  - template: Security/SAST.gitlab-ci.yml
+  - template: Dependency-Scanning.gitlab-ci.yml
 
 assembleRelease:
   stage: build
@@ -37,7 +37,5 @@ sast:
   stage: test
   script: -echo "runnging the test job"
   artifacts:
-    paths:
-     - gl-sast-report.json
     reports:
-      sast: gl-sast-report.json
+       dependency_scanning: gl-dependency-scanning-report.json
