@@ -21,6 +21,7 @@ include:
 
 sast:
   stage: test
+  image: jangrewe/gitlab-ci-android
   script: -echo "runnging the test job"
 
 assembleRelease:
