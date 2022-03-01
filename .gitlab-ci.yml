@@ -4,7 +4,7 @@
 # Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-
+image: jangrewe/gitlab-ci-android
 before_script:
 - cd pos_android_studio_demo/
 - export GRADLE_USER_HOME=$(pwd)/.gradle
@@ -21,7 +21,6 @@ include:
 
 sast:
   stage: test
-  image: jangrewe/gitlab-ci-android
   script: -echo "runnging the test job"
 
 assembleRelease:
