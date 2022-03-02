@@ -36,6 +36,5 @@ assembleRelease:
 
 sast:
   stage: test
-  script: -echo "runnging the test job"
   variables:
      CI_DEBUG_TRACE: "true"
