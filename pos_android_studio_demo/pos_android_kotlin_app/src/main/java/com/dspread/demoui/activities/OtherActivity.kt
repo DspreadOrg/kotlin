@@ -1242,13 +1242,13 @@ class OtherActivity : BaseActivity() {
                     if (pin == "000000") {
                         pos!!.sendEncryptPin("5516422217375116")
                     } else {
-                        pos!!.sendPin(pin)
+                        pos!!.sendPin(pin.toByteArray())
                     }
                     dismissDialog()
                 }
             }
             dialog!!.findViewById<View>(R.id.bypassButton).setOnClickListener { //					pos.bypassPin();
-                pos!!.sendPin("")
+                pos!!.sendPin(byteArrayOf())
                 dismissDialog()
             }
             dialog!!.findViewById<View>(R.id.cancelButton).setOnClickListener {

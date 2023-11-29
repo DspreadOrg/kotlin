@@ -27,7 +27,6 @@ import com.dspread.demoui.USBClass
 import com.dspread.demoui.utils.*
 import com.dspread.demoui.widget.InnerListview
 import com.dspread.xpos.CQPOSService
-import com.dspread.xpos.LogFileConfig
 import com.dspread.xpos.QPOSService
 import com.dspread.xpos.QPOSService.*
 import com.dspread.xpos.QPOSService.Display
@@ -1369,14 +1368,14 @@ class MainActivity : BaseActivity(), ShowGuideView.onGuideViewListener {
                         pos!!.sendEncryptPin("5516422217375116")
 
                     } else {
-                        pos!!.sendPin(pin)
+                        pos!!.sendPin(pin.toByteArray())
                     }
                     dismissDialog()
                 }
             }
             dialog!!.findViewById<Button>(R.id.bypassButton).setOnClickListener{
 //                pos!!.bypassPin()
-                pos!!.sendPin("")
+                pos!!.sendPin(byteArrayOf())
                 dismissDialog()
             }
 
@@ -1984,25 +1983,10 @@ class MainActivity : BaseActivity(), ShowGuideView.onGuideViewListener {
         Log.e("execut end:", "deviceShowDisplay")
     }
 
-    private fun transformDevice(usbDevice:UsbDevice) : String{
-        var deviceName =  String()
-        var mManager =  this@MainActivity.getSystemService(Context.USB_SERVICE) as (UsbManager)
-        var mPermissionIntent = PendingIntent.getBroadcast(this@MainActivity, 0,  Intent(
-                "com.android.example.USB_PERMISSION"), 0)
-        mManager.requestPermission(usbDevice, mPermissionIntent)
-        var connection = mManager.openDevice(usbDevice)
-        var rawBuf = ByteArray(25)
-        var len = connection.controlTransfer(0x80, 0x06, 0x0302,
-                0x0409, rawBuf, 0x00FF, 60)
-        rawBuf = Arrays.copyOfRange(rawBuf, 2, len)
-        deviceName = String(rawBuf)
-        return deviceName
-    }
-
     private var mUsbReceiver : BroadcastReceiver = mBroadcastReceiver()
     private fun devicePermissionRequest( mManager :UsbManager,  usbDevice:UsbDevice) {
         var mPermissionIntent = PendingIntent.getBroadcast(this@MainActivity, 0, Intent(
-                "com.android.example.USB_PERMISSION"), 0)
+                "com.android.example.USB_PERMISSION"), PendingIntent.FLAG_IMMUTABLE)
         var filter =  IntentFilter(ACTION_USB_PERMISSION)
         registerReceiver(mUsbReceiver, filter)
         mManager.requestPermission(usbDevice, mPermissionIntent)
@@ -2197,7 +2181,6 @@ class MainActivity : BaseActivity(), ShowGuideView.onGuideViewListener {
                     //request permission
                     ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), REQUEST_WRITE_EXTERNAL_STORAGE)
                 } else {
-                    LogFileConfig.getInstance().setWriteFlag(true)
                     var data : ByteArray? = null
                     var allFiles :List<String>? = null
 //                    allFiles = FileUtils.getAllFiles(FileUtils.POS_Storage_Dir)
