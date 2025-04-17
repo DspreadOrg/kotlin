@@ -1,5 +1,6 @@
 package com.dspread.demoui.activities
 
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.Activity
 import android.graphics.Color
@@ -155,6 +156,7 @@ abstract class BaseActivity : AppCompatActivity() {
      *
      * @param toolbarIconsColor the target color of toolbar icons
      */
+    @SuppressLint("RestrictedApi")
     fun setToolbarIconColor(toolbarIconsColor: Int) {
         if (toolbar != null) {
             val colorFilter = PorterDuffColorFilter(toolbarIconsColor, PorterDuff.Mode.SRC_ATOP) //MULTIPLY
