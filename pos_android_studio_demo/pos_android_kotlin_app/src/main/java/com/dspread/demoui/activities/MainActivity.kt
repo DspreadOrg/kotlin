@@ -2681,7 +2681,7 @@ class MainActivity : BaseActivity(), ShowGuideView.onGuideViewListener {
 
     fun updateEmvConfigByXml() {
         pos?.updateEMVConfigByXml(
-            this@MainActivity.assets.open("emv_profile_tlv_D20.xml").bufferedReader().use {
+            this@MainActivity.assets.open("MEXICO-QPOS cute,CR100,D20,D30,D60,D50,D70.xml").bufferedReader().use {
                 val text = it.readText()
                 text
             })
